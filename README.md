@@ -1,5 +1,5 @@
 *************************************************************************
-******** CHESSCODE - Par Jonathan DEGRANGE et Nathan OIZEL **************
+******** CHESSCODE - Par Nathan OIZEL **************
 *************************************************************************
 
 
@@ -8,6 +8,6 @@
 *************************************************************************
 
 SFML est la base de la version graphique de CHESSCODE, pour l'installer,
-il suffit de taper la commande suivante de le terminal de linux : 
+il suffit de taper la commande suivante de le terminal de linux :
 
 sudo apt-get install libsfml-dev
