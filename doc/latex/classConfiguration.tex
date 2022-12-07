@@ -1,0 +1,128 @@
+\hypertarget{classConfiguration}{}\doxysection{Configuration Class Reference}
+\label{classConfiguration}\index{Configuration@{Configuration}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConfiguration_a779947337bf652f0e773cb29f37f14ba}{Configuration}} ()
+\begin{DoxyCompactList}\small\item\em Construit un nouvel objet de \mbox{\hyperlink{classConfiguration}{Configuration}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classConfiguration_a115515ca0421f282e8bd0ded470c8c8d}{Configuration}} (int i)
+\begin{DoxyCompactList}\small\item\em Surcharge du constructeur de \mbox{\hyperlink{classConfiguration}{Configuration}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classConfiguration_a0dd0fa189e239f4c9a036303f641441e}{$\sim$\+Configuration}} ()
+\begin{DoxyCompactList}\small\item\em Détruit un objet de \mbox{\hyperlink{classConfiguration}{Configuration}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPiece}{Piece}} $\ast$ \mbox{\hyperlink{classConfiguration_a9eb438a5b107223824addeec739cd632}{board}} (int i, int j) const
+\begin{DoxyCompactList}\small\item\em Accesseur de tab\+Piece, permet de d\textquotesingle{}accéder de manière sûre à chacune des cases de tab\+Piece\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConfiguration_a1908d3bb70ac5fc2230fc03356254fe1}{set\+Board}} (int i, int j, \mbox{\hyperlink{classPiece}{Piece}} $\ast$P)
+\begin{DoxyCompactList}\small\item\em Mutateur permettant de modifier de manière sûre les valeurs des cases de tab\+Piece. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classConfiguration_a642b269caa8c4d12942446db6902c5f2}\label{classConfiguration_a642b269caa8c4d12942446db6902c5f2}} 
+bool {\bfseries is\+Move\+Legal} (const int pos\+X\+Init, const int pos\+Y\+Init, const int pos\+X\+Final, const int pos\+Y\+Final) const
+\item 
+bool \mbox{\hyperlink{classConfiguration_a0339e730ec84a6a829eabff5b88f7eb8}{get\+White\+To\+Play}} () const
+\begin{DoxyCompactList}\small\item\em Accède à la valeur stocké dans white\+To\+Play, permet de connaitre la couleur du trait. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classConfiguration_a9346b985d12a893df6ab6762aff286b4}\label{classConfiguration_a9346b985d12a893df6ab6762aff286b4}} 
+void {\bfseries move\+Piece} (sf\+::\+Vector2i cursor\+Start\+Pos, sf\+::\+Vector2i cursor\+Final\+Pos)
+\item 
+\mbox{\Hypertarget{classConfiguration_a1327843e8078609ee4532b18a3c64a0a}\label{classConfiguration_a1327843e8078609ee4532b18a3c64a0a}} 
+void {\bfseries move\+Piece\+Texte} (const int pos\+X1, const int pos\+Y1, const int pos\+X2, const int pos\+Y2)
+\item 
+\mbox{\Hypertarget{classConfiguration_abbfb57cbf62e41b6e7c8bbaaa454a43a}\label{classConfiguration_abbfb57cbf62e41b6e7c8bbaaa454a43a}} 
+bool {\bfseries is\+King\+Mate} (const \mbox{\hyperlink{classConfiguration}{Configuration}} C)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classConfiguration_a779947337bf652f0e773cb29f37f14ba}\label{classConfiguration_a779947337bf652f0e773cb29f37f14ba}} 
+\index{Configuration@{Configuration}!Configuration@{Configuration}}
+\index{Configuration@{Configuration}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{Configuration()}{Configuration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Configuration\+::\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construit un nouvel objet de \mbox{\hyperlink{classConfiguration}{Configuration}}. 
+
+\mbox{\Hypertarget{classConfiguration_a115515ca0421f282e8bd0ded470c8c8d}\label{classConfiguration_a115515ca0421f282e8bd0ded470c8c8d}} 
+\index{Configuration@{Configuration}!Configuration@{Configuration}}
+\index{Configuration@{Configuration}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{Configuration()}{Configuration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Configuration\+::\+Configuration (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Surcharge du constructeur de \mbox{\hyperlink{classConfiguration}{Configuration}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: Indiquer à quoi sert i ici \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classConfiguration_a0dd0fa189e239f4c9a036303f641441e}\label{classConfiguration_a0dd0fa189e239f4c9a036303f641441e}} 
+\index{Configuration@{Configuration}!````~Configuration@{$\sim$Configuration}}
+\index{````~Configuration@{$\sim$Configuration}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{$\sim$Configuration()}{~Configuration()}}
+{\footnotesize\ttfamily Configuration\+::$\sim$\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Détruit un objet de \mbox{\hyperlink{classConfiguration}{Configuration}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classConfiguration_a9eb438a5b107223824addeec739cd632}\label{classConfiguration_a9eb438a5b107223824addeec739cd632}} 
+\index{Configuration@{Configuration}!board@{board}}
+\index{board@{board}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{board()}{board()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPiece}{Piece}} $\ast$ Configuration\+::board (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de tab\+Piece, permet de d\textquotesingle{}accéder de manière sûre à chacune des cases de tab\+Piece\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: indice de la case X de tab\+Piece \\
+\hline
+{\em j} & \+: indice de la case Y de tab\+Piece \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Piece$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConfiguration_a0339e730ec84a6a829eabff5b88f7eb8}\label{classConfiguration_a0339e730ec84a6a829eabff5b88f7eb8}} 
+\index{Configuration@{Configuration}!getWhiteToPlay@{getWhiteToPlay}}
+\index{getWhiteToPlay@{getWhiteToPlay}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{getWhiteToPlay()}{getWhiteToPlay()}}
+{\footnotesize\ttfamily bool Configuration\+::get\+White\+To\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accède à la valeur stocké dans white\+To\+Play, permet de connaitre la couleur du trait. 
+
+\begin{DoxyReturn}{Returns}
+Retourne la valeur stockée dans white\+To\+Play 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConfiguration_a1908d3bb70ac5fc2230fc03356254fe1}\label{classConfiguration_a1908d3bb70ac5fc2230fc03356254fe1}} 
+\index{Configuration@{Configuration}!setBoard@{setBoard}}
+\index{setBoard@{setBoard}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{setBoard()}{setBoard()}}
+{\footnotesize\ttfamily void Configuration\+::set\+Board (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\mbox{\hyperlink{classPiece}{Piece}} $\ast$}]{P }\end{DoxyParamCaption})}
+
+
+
+Mutateur permettant de modifier de manière sûre les valeurs des cases de tab\+Piece. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: indice de la case X de tab\+Piece \\
+\hline
+{\em j} & \+: indice de la case Y de tab\+Piece \\
+\hline
+{\em P} & \+: représente la pièce/valeur à ajouter dans la case correspondante \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Configuration.\+h\item 
+src/Configuration.\+cpp\end{DoxyCompactItemize}

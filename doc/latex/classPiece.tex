@@ -1,0 +1,121 @@
+\hypertarget{classPiece}{}\doxysection{Piece Class Reference}
+\label{classPiece}\index{Piece@{Piece}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPiece_ac57de5803bbad829b143bc7268267dc1}\label{classPiece_ac57de5803bbad829b143bc7268267dc1}} 
+\mbox{\hyperlink{classPiece_ac57de5803bbad829b143bc7268267dc1}{Piece}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut de la classe \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPiece_ac91b94fe0c251b3403bc7b7ff80a2c8a}\label{classPiece_ac91b94fe0c251b3403bc7b7ff80a2c8a}} 
+{\bfseries Piece} (bool white)
+\item 
+\mbox{\Hypertarget{classPiece_a6710c388072b0ad6b510cc0be83b30b5}\label{classPiece_a6710c388072b0ad6b510cc0be83b30b5}} 
+{\bfseries Piece} (int V, string N, bool white)
+\item 
+\mbox{\Hypertarget{classPiece_a5d7a4f6bade94cb33b6f634de8aa7918}\label{classPiece_a5d7a4f6bade94cb33b6f634de8aa7918}} 
+virtual \mbox{\hyperlink{classPiece_a5d7a4f6bade94cb33b6f634de8aa7918}{$\sim$\+Piece}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPiece_a55598504dcaf6f6ff0700de6393a54f1}\label{classPiece_a55598504dcaf6f6ff0700de6393a54f1}} 
+bool \mbox{\hyperlink{classPiece_a55598504dcaf6f6ff0700de6393a54f1}{get\+Is\+Taken}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur \+: récupère le booleen is\+Taken de la \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPiece_a1af5be558cc481087ad4f6a6a33b0c8f}{set\+Is\+Taken}} (const bool taken)
+\begin{DoxyCompactList}\small\item\em Mutateur \+: modifie le booleen is\+Taken de la \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPiece_ab535fb88264b7fab8dd6405b23e13373}\label{classPiece_ab535fb88264b7fab8dd6405b23e13373}} 
+bool \mbox{\hyperlink{classPiece_ab535fb88264b7fab8dd6405b23e13373}{get\+Is\+White}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur \+: récupère le booleen is\+White de la \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPiece_a9c3f61cd3f6527dc61e916738b341da7}{set\+Is\+White}} (bool new\+Color)
+\begin{DoxyCompactList}\small\item\em Mutateur \+: modifie le booleen is\+White de la \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPiece_a8c0c8e2d3f76034f468a1951c0678f63}\label{classPiece_a8c0c8e2d3f76034f468a1951c0678f63}} 
+int \mbox{\hyperlink{classPiece_a8c0c8e2d3f76034f468a1951c0678f63}{get\+Value\+Piece}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur \+: récupère la value de la \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPiece_a030537a96a75599b75e592893af81cf9}{set\+Value\+Piece}} (const int V)
+\begin{DoxyCompactList}\small\item\em Mutateur \+: modifie le value de la \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPiece_a0a1e456c2fbce50a1a49b27f7eee3226}\label{classPiece_a0a1e456c2fbce50a1a49b27f7eee3226}} 
+bool \mbox{\hyperlink{classPiece_a0a1e456c2fbce50a1a49b27f7eee3226}{get\+Is\+Moved}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur \+: récupère le booleen is\+Moved de la \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPiece_a856c1db841a1a1504eaea3b4e7cbfc64}{set\+Is\+Moved}} (const bool moved)
+\begin{DoxyCompactList}\small\item\em Mutateur \+: modifie le booleen is\+Moved de la \mbox{\hyperlink{classPiece}{Piece}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPiece_ab9d5b2c09aa69c4f4236557bb24233e1}\label{classPiece_ab9d5b2c09aa69c4f4236557bb24233e1}} 
+virtual bool {\bfseries is\+Move\+Legal} (const \mbox{\hyperlink{classConfiguration}{Configuration}} \&C, const int pos\+X\+Init, const int pos\+Y\+Init, const int pos\+X\+Final, const int pos\+Y\+Final) const
+\item 
+\mbox{\Hypertarget{classPiece_a9cd592adf26dd16263ed4e7c6f000775}\label{classPiece_a9cd592adf26dd16263ed4e7c6f000775}} 
+bool {\bfseries move\+Vertical} (const \mbox{\hyperlink{classConfiguration}{Configuration}} \&C, const int pos\+X\+Init, const int pos\+Y\+Init, const int pos\+X\+Final, const int pos\+Y\+Final) const
+\item 
+\mbox{\Hypertarget{classPiece_a9f89cb8c766a30728bfb96dce51c236b}\label{classPiece_a9f89cb8c766a30728bfb96dce51c236b}} 
+bool {\bfseries move\+Diagonal} (const \mbox{\hyperlink{classConfiguration}{Configuration}} \&C, const int pos\+X\+Init, const int pos\+Y\+Init, const int pos\+X\+Final, const int pos\+Y\+Final) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPiece_a02ac4118508fc44dde17e69bebd15f00}\label{classPiece_a02ac4118508fc44dde17e69bebd15f00}} 
+string {\bfseries nom\+Piece}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPiece_a856c1db841a1a1504eaea3b4e7cbfc64}\label{classPiece_a856c1db841a1a1504eaea3b4e7cbfc64}} 
+\index{Piece@{Piece}!setIsMoved@{setIsMoved}}
+\index{setIsMoved@{setIsMoved}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setIsMoved()}{setIsMoved()}}
+{\footnotesize\ttfamily void Piece\+::set\+Is\+Moved (\begin{DoxyParamCaption}\item[{const bool}]{moved }\end{DoxyParamCaption})}
+
+
+
+Mutateur \+: modifie le booleen is\+Moved de la \mbox{\hyperlink{classPiece}{Piece}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em moved} & \+: booleen qui nous dis si la \mbox{\hyperlink{classPiece}{Piece}} a deja bouger \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPiece_a1af5be558cc481087ad4f6a6a33b0c8f}\label{classPiece_a1af5be558cc481087ad4f6a6a33b0c8f}} 
+\index{Piece@{Piece}!setIsTaken@{setIsTaken}}
+\index{setIsTaken@{setIsTaken}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setIsTaken()}{setIsTaken()}}
+{\footnotesize\ttfamily void Piece\+::set\+Is\+Taken (\begin{DoxyParamCaption}\item[{const bool}]{taken }\end{DoxyParamCaption})}
+
+
+
+Mutateur \+: modifie le booleen is\+Taken de la \mbox{\hyperlink{classPiece}{Piece}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taken} & \+: booleen qui nous dis si la \mbox{\hyperlink{classPiece}{Piece}} est prise \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPiece_a9c3f61cd3f6527dc61e916738b341da7}\label{classPiece_a9c3f61cd3f6527dc61e916738b341da7}} 
+\index{Piece@{Piece}!setIsWhite@{setIsWhite}}
+\index{setIsWhite@{setIsWhite}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setIsWhite()}{setIsWhite()}}
+{\footnotesize\ttfamily void Piece\+::set\+Is\+White (\begin{DoxyParamCaption}\item[{bool}]{new\+Color }\end{DoxyParamCaption})}
+
+
+
+Mutateur \+: modifie le booleen is\+White de la \mbox{\hyperlink{classPiece}{Piece}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Color} & \+: booleen qui nous dis si la \mbox{\hyperlink{classPiece}{Piece}} est white = true ou black = noir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPiece_a030537a96a75599b75e592893af81cf9}\label{classPiece_a030537a96a75599b75e592893af81cf9}} 
+\index{Piece@{Piece}!setValuePiece@{setValuePiece}}
+\index{setValuePiece@{setValuePiece}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setValuePiece()}{setValuePiece()}}
+{\footnotesize\ttfamily void Piece\+::set\+Value\+Piece (\begin{DoxyParamCaption}\item[{const int}]{V }\end{DoxyParamCaption})}
+
+
+
+Mutateur \+: modifie le value de la \mbox{\hyperlink{classPiece}{Piece}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & \+: nouvelle valeur de la \mbox{\hyperlink{classPiece}{Piece}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Piece.\+h\item 
+src/Piece.\+cpp\end{DoxyCompactItemize}
